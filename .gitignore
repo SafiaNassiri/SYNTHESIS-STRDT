@@ -7,7 +7,6 @@
 [Mm]emoryCaptures/
 UserSettings/
 .vscode/
-.idea/
 *.csproj
 *.unityproj
 *.sln
