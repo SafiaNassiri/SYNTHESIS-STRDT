@@ -3,12 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\nieje\\Desktop\\The-Ashen-Sleep\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3E9E3405-447C-0A4F-2C5E-7A116E6491B5}|Assembly-CSharp.csproj|c:\\users\\nieje\\desktop\\the-ashen-sleep\\assets\\scripts\\player\\topdownplayercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3E9E3405-447C-0A4F-2C5E-7A116E6491B5}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\topdownplayercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3E9E3405-447C-0A4F-2C5E-7A116E6491B5}|Assembly-CSharp.csproj|c:\\users\\nieje\\desktop\\the-ashen-sleep\\assets\\scripts\\player\\platformerplayercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3E9E3405-447C-0A4F-2C5E-7A116E6491B5}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\platformerplayercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nieje\\Desktop\\The-Ashen-Sleep\\Assets\\Scripts\\Player\\PlayerController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\Player\\PlayerController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,32 +14,19 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "PlatformerPlayerController.cs",
-              "DocumentMoniker": "C:\\Users\\nieje\\Desktop\\The-Ashen-Sleep\\Assets\\Scripts\\Player\\PlatformerPlayerController.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\PlatformerPlayerController.cs",
-              "ToolTip": "C:\\Users\\nieje\\Desktop\\The-Ashen-Sleep\\Assets\\Scripts\\Player\\PlatformerPlayerController.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Player\\PlatformerPlayerController.cs",
-              "ViewState": "AgIAAFEAAAAAAAAAAAAowEMAAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-22T21:36:23.152Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "TopDownPlayerController.cs",
-              "DocumentMoniker": "C:\\Users\\nieje\\Desktop\\The-Ashen-Sleep\\Assets\\Scripts\\Player\\TopDownPlayerController.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\TopDownPlayerController.cs",
-              "ToolTip": "C:\\Users\\nieje\\Desktop\\The-Ashen-Sleep\\Assets\\Scripts\\Player\\TopDownPlayerController.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Player\\TopDownPlayerController.cs",
-              "ViewState": "AgIAADwAAAAAAAAAAAAowFcAAAAAAAAAAAAAAA==",
+              "Title": "PlayerController.cs",
+              "DocumentMoniker": "C:\\Users\\nieje\\Desktop\\The-Ashen-Sleep\\Assets\\Scripts\\Player\\PlayerController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\PlayerController.cs",
+              "ToolTip": "C:\\Users\\nieje\\Desktop\\The-Ashen-Sleep\\Assets\\Scripts\\Player\\PlayerController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Player\\PlayerController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-22T21:28:38.668Z",
+              "WhenOpened": "2025-07-22T23:36:53.698Z",
               "EditorCaption": ""
             }
           ]
