@@ -1,54 +1,70 @@
 # The-Ashen-Sleep
-A 2D Action-Roguelite Metroidvania, inspired by Death Stranding, Shadow of Mordor, and Hollow Knight.
+*A 2D Action-Roguelite Metroidvania inspired by Death Stranding, Shadow of Mordor, and Hollow Knight.*
 
 ---
 
 ## About The Game
-The Ashen Sleep plunges players into a haunting post-cataclysmic Earth where humanity has fractured, and survival depends on uncovering hidden truths. Awakened from a long slumber inside a forgotten facility, you explore a corrupted surface world filled with twisted creatures and ancient underground sanctuaries kept alive by sentient AI.
-As you journey through interconnected biomes and forsaken facilities, you battle relentless foes, uncover fragments of memory, and piece together a cosmic mystery that challenges your very identity.
-Core themes include:
-- Cosmic horror and loss
-- Identity, memory, and creation
-- The delicate balance between technology and nature
+**The Ashen Sleep** immerses players in a bleak, post-cataclysmic Earth. You awaken from stasis in a decaying underground facility—no memory, no mission. The surface above is a scarred, toxic wasteland where corrupted creatures roam and long-dormant machines stir. Sentient AI still operate beneath, clinging to their original directives in a world that’s moved on—or died trying.
+
+Players traverse vast, interconnected biomes—both ruined surface cities and hidden subterranean complexes—battling grotesque enemies, recovering memory fragments, and reconnecting isolated facilities. Each step brings you closer to a revelation that challenges the very foundation of your identity and what it means to be “human.”
+
+### Themes
+- Cosmic horror and the unknown
+- Memory, identity, and rebirth
+- Isolation, entropy, and technological decay
+- Resistance against artificial gods
 
 ---
 
 ## Gameplay Features  
-- Fluid 2D top-down movement and melee combat: Engage enemies with precise attacks and dashes that reward timing and skill.
-- Roguelite progression: Death is not the end. Respawn, recover lost fragments, and grow stronger through upgrades and memory recovery.
-- Exploration-driven design: Traverse atmospheric, ruined surface biomes and intricate underground facilities, each with unique challenges and secrets.
-- Narrative-driven experience: Deep lore revealed via environmental storytelling, dialogue, and scattered memory fragments.
-- Dynamic AI enemies: Face off against corrupted creatures and powerful bosses that adapt and challenge your strategy.
+- **Top-Down 2D Combat**: Precise, responsive melee and dash mechanics. Every move matters.
+- **Roguelite Systems**: Death reshapes your run, with each cycle reclaiming memory fragments and unlocking permanent upgrades.
+- **Environmental Exploration**: Each biome contains layered paths, hidden routes, secrets, and lore.
+- **Narrative-Driven Progression**: Story is unraveled through memories, AI terminals, and environmental cues—no cutscene overload.
+- **Dynamic Enemy AI**: Enemies exhibit ambush, patrol, or swarm behaviors. Bosses change phases based on your decisions and upgrades.
+- **Facility Reconnection System**: Restore power to forgotten sites, reawaken sleeping systems, and reveal forgotten truths about the Collapse.
 
 ---
 
 ## Core Systems
-- Movement & Combat: Responsive player controls with dash mechanics for both offense and evasion.
-- Memory Fragment Collection: Defeating enemies and uncovering secrets rewards memory fragments used to unlock skills and story revelations.
-- Facility Reconnection: Key objective involves restoring connections between underground facilities to advance the story and unlock new regions.
-- Enemy AI: Varied enemy behaviors, including patrols, ambushes, and boss fight mechanics.
-- Narrative Integration: Story progression is tied to player exploration, with memories and AI interactions driving the overarching mystery.
+| System | Description |
+|--------|-------------|
+| **Movement & Combat** | Responsive controls with dodge-into-strike mechanics, including momentum-based dashing and melee finishers. |
+| **Memory Fragments** | Core collectible tied to upgrades and narrative discovery. Fragments are retrieved from enemies, hidden caches, and boss encounters. |
+| **Persistent Progression** | Unlock abilities, traverse deeper biomes, and influence endings through decisions and discoveries. |
+| **Narrative Integration** | No exposition dumps. Lore is embedded in your environment, choices, and discovered memories. |
+| **Procedural Event Layer** | Certain surface events shift dynamically between runs (storms, hostile patrols, memory anomalies). |
+
 
 ---
 
-## Project Structure
-- /Assets/Scripts — Core gameplay scripts (player, enemies, combat, etc.)
-- /Assets/Scenes — Unity scenes (prototype, facility, surface biome)
-- /Assets/Art — Placeholder and final art assets
-- /Assets/Audio — Sound effects and music
-- /Assets/Dialogue — Yarn Spinner/Ink scripts for story and lore
+## Project Structure (Unity)
+/Assets
+├── /Scripts         # Player controls, enemy AI, combat logic
+├── /Scenes          # World hub, surface biomes, facility interiors
+├── /Art             # Placeholder and production-ready art assets
+├── /Audio           # Sound effects, ambient music
+├── /Dialogue        # Yarn Spinner/Ink integration for AI and story
+├── /UI              # HUD, dialogue, memory interface
+
+---
+
+## Documentation & Links
+- [Game Design Document (GDD)]((https://drive.google.com/drive/folders/1an2nZuQnJC2ohe8qmuY7ay2jQUpX_Arj?usp=sharing))
+- [Story Outline & Beats]((https://docs.google.com/document/d/1NJs0NsSAZjO9WPrg9r6mn4k1Z81aXW6eTNH3LisAMoQ/edit?usp=sharing))
+- [Trello Board]((https://trello.com/b/O2p765xU/the-ashen-sleep))
 
 ---
 
 ## Contribution
-This project is primarily a personal/student effort, but contributions and feedback are always welcome! If you find bugs, have ideas, or want to help improve the game, please open issues or submit pull requests.
+This is an active solo/student-led project, but collaborators and contributors are welcome.
 
 ---
 
 ## License
-This project is non-commercial and personal. All third-party assets used are credited and remain the property of their respective creators.
+Non-commercial project. All third-party assets used are credited and remain the property of their respective creators. The Ashen Sleep is a student/independent prototype and is not for commercial distribution.
 
 ---
 
-## Important Note on Story & Spoilers
-The player’s true origins and the nature of their memories are central mysteries of the game. To preserve the experience, these details are intentionally hidden during early gameplay and revealed gradually through story progression. Players start with memories that may not be their own, and discovering the truth is part of the journey.
+## ⚠️ Spoiler Warning
+The Ashen Sleep is designed around mystery, misdirection, and self-discovery. Key elements of your identity, your purpose, and the nature of the world are obscured at the start. Memory Fragments—earned in gameplay—reveal narrative layers at your own pace. Player choices influence how much truth is uncovered, and which truths stay buried.
