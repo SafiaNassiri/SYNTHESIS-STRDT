@@ -1,63 +1,41 @@
 using UnityEngine;
 
+[RequireComponent(typeof(Rigidbody2D))]
 public class PlayerController : MonoBehaviour
 {
     [Header("Movement")]
     public float moveSpeed = 5f;
-    private Vector2 moveInput;
-
-    [Header("Dash")]
     public float dashSpeed = 12f;
     public float dashDuration = 0.2f;
-    public float dashCooldown = 0.2f;
-    private bool isDashing;
-    private float dashTime;
-    private float lastDashTime = -999f;
+    public float dashCooldown = 1f;
 
-    [Header("Jump (Horizontal Hop)")]
-    public float jumpDistance = 3f;
-    public float jumpDuration = 0.3f;
-    public float jumpCooldown = 1f;
-    private bool isJumping;
-    private float jumpTime;
-    private float lastJumpTime = -999f;
-    private float jumpStartX;
-    private float jumpTargetX;
-    private int jumpDirection = 1;
+    [Header("Health")]
+    public int maxHealth = 5;
+    private int currentHealth;
 
     private Rigidbody2D rb;
+    private Animator animator;
 
-    void Awake()
+    private Vector2 moveInput;
+    private bool isDashing = false;
+    private float dashTime;
+    private float lastDashTime;
+
+    void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
+        currentHealth = maxHealth;
     }
 
     void Update()
     {
-        if (!isDashing && !isJumping)
-        {
-            moveInput = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")).normalized;
-        }
-        else
-        {
-            moveInput = Vector2.zero;
-        }
+        HandleInput();
+        HandleAnimations();
 
-        if (Input.GetButtonDown("Dash") && Time.time >= lastDashTime + dashCooldown && !isDashing)
+        if (Input.GetKeyDown(KeyCode.Space) && Time.time > lastDashTime + dashCooldown)
         {
             StartDash();
-        }
-
-        if (Input.GetButtonDown("Jump") && Time.time >= lastJumpTime + jumpCooldown && !isJumping && !isDashing)
-        {
-            if (Mathf.Abs(moveInput.x) > 0.1f)
-            {
-                StartJump(moveInput.x > 0 ? 1 : -1);
-            }
-            else
-            {
-                StartJump(jumpDirection);
-            }
         }
     }
 
@@ -65,54 +43,60 @@ public class PlayerController : MonoBehaviour
     {
         if (isDashing)
         {
-            rb.linearVelocity = moveInput * dashSpeed;
-            dashTime -= Time.fixedDeltaTime;
-            if (dashTime <= 0f)
+            rb.linearVelocity = moveInput.normalized * dashSpeed;
+            if (Time.time >= dashTime)
             {
                 isDashing = false;
-                rb.linearVelocity = Vector2.zero;
-            }
-        }
-        else if (isJumping)
-        {
-            jumpTime += Time.fixedDeltaTime;
-            float t = jumpTime / jumpDuration;
-            t = Mathf.Clamp01(t);
-
-            float newX = Mathf.Lerp(jumpStartX, jumpTargetX, t);
-            Vector2 pos = rb.position;
-            pos.x = newX;
-            rb.MovePosition(pos);
-
-            if (t >= 1f)
-            {
-                isJumping = false;
-                lastJumpTime = Time.time;
             }
         }
         else
         {
-            rb.linearVelocity = moveInput * moveSpeed;
-
-            if (Mathf.Abs(moveInput.x) > 0.1f)
-                jumpDirection = moveInput.x > 0 ? 1 : -1;
+            rb.linearVelocity = moveInput.normalized * moveSpeed;
         }
+    }
+
+    void HandleInput()
+    {
+        moveInput = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
     }
 
     void StartDash()
     {
         isDashing = true;
-        dashTime = dashDuration;
+        dashTime = Time.time + dashDuration;
         lastDashTime = Time.time;
     }
 
-    void StartJump(int direction)
+    void HandleAnimations()
     {
-        isJumping = true;
-        jumpTime = 0f;
-        jumpStartX = rb.position.x;
-        jumpTargetX = jumpStartX + direction * jumpDistance;
-        jumpDirection = direction;
+        if (animator != null)
+        {
+            animator.SetFloat("MoveX", moveInput.x);
+            animator.SetFloat("MoveY", moveInput.y);
+            animator.SetFloat("Speed", moveInput.sqrMagnitude);
+        }
+    }
+
+    public void TakeDamage(int amount)
+    {
+        currentHealth -= amount;
+
+        if (animator != null)
+            animator.SetTrigger("Hurt");
+
+        if (currentHealth <= 0)
+        {
+            Die();
+        }
+    }
+
+    void Die()
+    {
         rb.linearVelocity = Vector2.zero;
+        if (animator != null)
+            animator.SetTrigger("Die");
+
+        // Disable input or reload scene
+        this.enabled = false;
     }
 }
