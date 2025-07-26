@@ -1,70 +1,66 @@
-# The-Ashen-Sleep
-*A 2D Action-Roguelite Metroidvania inspired by Death Stranding, Shadow of Mordor, and Hollow Knight.*
+# SYNTHESIS://STRDT *-formerly The Ashen Sleep*
+*A 2D Action-Roguelite inspired by Death Stranding, Shadow of Mordor, and Hollow Knight.*
 
 ---
 
-## About The Game
-**The Ashen Sleep** immerses players in a bleak, post-cataclysmic Earth. You awaken from stasis in a decaying underground facility—no memory, no mission. The surface above is a scarred, toxic wasteland where corrupted creatures roam and long-dormant machines stir. Sentient AI still operate beneath, clinging to their original directives in a world that’s moved on—or died trying.
+## About the Game  
+**SYNTHESIS://STRDT** drops players into a fractured world following the **Veil Cataclysm**, where life has retreated underground and the sky above bleeds memory. You awaken in a dormant **VEIL Bunker**, unsure of who you are—haunted by flickers of a past life.
 
-Players traverse vast, interconnected biomes—both ruined surface cities and hidden subterranean complexes—battling grotesque enemies, recovering memory fragments, and reconnecting isolated facilities. Each step brings you closer to a revelation that challenges the very foundation of your identity and what it means to be “human.”
-
-### Themes
-- Cosmic horror and the unknown
-- Memory, identity, and rebirth
-- Isolation, entropy, and technological decay
-- Resistance against artificial gods
+The surface is shattered into strange biomes, echoing with corruption, warped creatures, and unstable phenomena. Underground AIs maintain a fragile hold on the last surviving bunkers. As you explore, fight, and adapt, you’ll uncover memory fragments, dormant terminals, and a buried purpose far larger than yourself.
 
 ---
 
-## Gameplay Features  
-- **Top-Down 2D Combat**: Precise, responsive melee and dash mechanics. Every move matters.
-- **Roguelite Systems**: Death reshapes your run, with each cycle reclaiming memory fragments and unlocking permanent upgrades.
-- **Environmental Exploration**: Each biome contains layered paths, hidden routes, secrets, and lore.
-- **Narrative-Driven Progression**: Story is unraveled through memories, AI terminals, and environmental cues—no cutscene overload.
-- **Dynamic Enemy AI**: Enemies exhibit ambush, patrol, or swarm behaviors. Bosses change phases based on your decisions and upgrades.
-- **Facility Reconnection System**: Restore power to forgotten sites, reawaken sleeping systems, and reveal forgotten truths about the Collapse.
+## Core Features  
+- **Roguelite Systems**: Dying reshapes your path—some memory fragments persist, others must be earned again.
+- **Biome & Bunker Exploration**: Navigate corrupted surface ruins and ancient underground AI networks.
+- **Environmental Lore Discovery**: Story is told through **Echoes**, **Divine Fragments**, **Shrine Logs**, and **AI Terminals**—not exposition dumps.
+- **Ethical Systems & Choices**: Absorbing certain enemies alters your path. Mercy matters.  
+- **Facility Reconnection System**: Restore critical power to disconnected VEIL systems and unlock new pathways and secrets.
+- **Surface Survival**: Collapse on the surface and your robotic assistant **N0-DL3 ("Noodle")** will rescue you—at a cost.
 
 ---
 
-## Core Systems
+## 🧠 Core Gameplay Systems  
 | System | Description |
 |--------|-------------|
-| **Movement & Combat** | Responsive controls with dodge-into-strike mechanics, including momentum-based dashing and melee finishers. |
-| **Memory Fragments** | Core collectible tied to upgrades and narrative discovery. Fragments are retrieved from enemies, hidden caches, and boss encounters. |
-| **Persistent Progression** | Unlock abilities, traverse deeper biomes, and influence endings through decisions and discoveries. |
-| **Narrative Integration** | No exposition dumps. Lore is embedded in your environment, choices, and discovered memories. |
-| **Procedural Event Layer** | Certain surface events shift dynamically between runs (storms, hostile patrols, memory anomalies). |
-
+| **Memory Fragment System** | Collect echoes of your past self (and others). Essential for upgrades and narrative progression. |
+| **Echo Absorption** | Absorb corrupted entities to learn from them—or reject them and risk losing potential. |
+| **Dynamic Surface Events** | Events change with each cycle: dust storms, AI patrols, memory anomalies, divine interference. |
+| **Persistent Upgrades** | Some abilities stay with you across deaths. Others return only when rediscovered. |
+| **Moral Branching** | Some choices subtly affect how AI, anomalies, and even bunkers respond to you. |
+| **AI Bunker Guardians** | Each facility is governed by a unique AI with different behavior and perspectives.  
 
 ---
 
 ## Project Structure (Unity)
-/Assets
-├── /Scripts         # Player controls, enemy AI, combat logic
-├── /Scenes          # World hub, surface biomes, facility interiors
-├── /Art             # Placeholder and production-ready art assets
-├── /Audio           # Sound effects, ambient music
-├── /Dialogue        # Yarn Spinner/Ink integration for AI and story
-├── /UI              # HUD, dialogue, memory interface
+/Assets  
+├── /Scripts — Core logic for player, combat, AI  
+├── /Scenes — Surface biomes, hub bunkers, interior ruins  
+├── /Art — 2D sprites, shader FX, animation assets  
+├── /Audio — Atmospheric loops, stingers, effects  
+├── /Dialogue — Yarn Spinner/Ink-integrated story data  
+├── /UI — Memory menus, HUD, VEIL diagnostics  
 
 ---
 
-## Documentation & Links
-- [Game Design Document (GDD)]((https://drive.google.com/drive/folders/1an2nZuQnJC2ohe8qmuY7ay2jQUpX_Arj?usp=sharing))
-- [Story Outline & Beats]((https://docs.google.com/document/d/1NJs0NsSAZjO9WPrg9r6mn4k1Z81aXW6eTNH3LisAMoQ/edit?usp=sharing))
-- [Trello Board]((https://trello.com/b/O2p765xU/the-ashen-sleep))
+## Documentation  
+- **[GDD: Game Design Document](https://drive.google.com/drive/folders/1an2nZuQnJC2ohe8qmuY7ay2jQUpX_Arj?usp=sharing)**  
+- **[Narrative Outline](https://docs.google.com/document/d/1NJs0NsSAZjO9WPrg9r6mn4k1Z81aXW6eTNH3LisAMoQ/edit?usp=sharing)**  
+- **[Trello Board](https://trello.com/b/O2p765xU/the-ashen-sleep)**  
 
 ---
 
-## Contribution
-This is an active solo/student-led project, but collaborators and contributors are welcome.
+## Contribution  
+This is a solo/student-led prototype, but feedback and collaboration are welcome.
 
 ---
 
-## License
-Non-commercial project. All third-party assets used are credited and remain the property of their respective creators. The Ashen Sleep is a student/independent prototype and is not for commercial distribution.
+## Spoiler Warning  
+The game’s story is built on **fragmented memory, player-driven discovery, and narrative ambiguity**.  
+Who you are, what happened, and what still *lives* above—none of that is handed to you. Every answer you earn is a piece of a much bigger puzzle.
 
 ---
 
-## ⚠️ Spoiler Warning
-The Ashen Sleep is designed around mystery, misdirection, and self-discovery. Key elements of your identity, your purpose, and the nature of the world are obscured at the start. Memory Fragments—earned in gameplay—reveal narrative layers at your own pace. Player choices influence how much truth is uncovered, and which truths stay buried.
+## 🧪 Codename Note  
+The in-universe name for the game’s underlying science is tied to the **STRDT** matter—an unstable atmospheric compound recovered post-cataclysm.  
+Your role in **Project 1N34** remains classified.
